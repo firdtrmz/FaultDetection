@@ -81,3 +81,4 @@ geopandas
 fiona>=1.8.19,<1.10
 shapely
 pyproj
+pytube
