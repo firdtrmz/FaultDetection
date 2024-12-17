@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Scrolling Marquee</title>
+    <style>
+        /* Container for the marquee */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #0080C5; /* Blue background */
+            height: 50px;
+            position: relative;
+            color: #FFFFFF; /* White text */
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        /* Text to scroll */
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Marquee Example -->
+    <div class="marquee-container">
+        <div class="marquee-text">
+            Welcome to Microsoft Copilot!
+        </div>
+    </div>
+</body>
+</html>
